@@ -1,0 +1,13 @@
+Number.ToText(Date.Year([Date])) & 
+(
+    if Date.Month([Date]) < 10 then
+        "0" & Number.ToText(Date.Month([Date]))
+    else 
+        Number.ToText(Date.Month([Date]))
+) & 
+(
+    if Date.Day([Date]) < 10 then
+        "0" & Number.ToText(Date.Day([Date]))
+    else 
+        Number.ToText(Date.Day([Date]))
+)
